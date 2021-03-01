@@ -592,6 +592,188 @@ h4.activmap-title {
 }
 
 /* ------------------------------------
+    About
+------------------------------------ */
+
+.about-hero {
+	position: relative;
+}
+.about-hero h1,
+.about-hero .breadcrumb,
+.about-hero .breadcrumb li.active,
+.about-hero .breadcrumb li+li:before,
+.about-hero p {
+	color: #fff;
+}
+@media only screen and (max-width: 640px) {
+	.about-hero h1 {
+		font-size: 30px;
+	}
+}
+.about-hero .breadcrumb {
+	margin-top: 0;
+}
+.about-hero-icon {
+	height: 65px;
+	display: inline-block;
+	-webkit-filter: drop-shadow(3px 3px 5px black);
+	filter: drop-shadow(3px 3px 5px black);
+}
+.about-panels-wrapper {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+} 
+.about-panel-wrapper {
+	flex-basis: 50%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 20px;
+	overflow: hidden;
+} 
+.about-panel {            
+	background-color: #0099d8; 
+	-webkit-transition: all .5s;
+	transition: all .5s; 
+	border-radius: 0;
+	height: 100%; 
+	position: relative;          
+}
+.about-panel:hover,
+.about-panel:focus,
+.about-panel:active {
+	background-color: #0a4595;	        
+} 
+a.about-panel-link:hover,
+a.about-panel-link:focus,
+a.about-panel-link:active,
+a.about-panel-link:hover .panel-title,
+a.about-panel-link:focus .panel-title,
+a.about-panel-link:active .panel-title {
+	text-decoration: none;
+}
+a.about-panel-link:hover .panel-title,
+a.about-panel-link:focus .panel-title,
+a.about-panel-link:active .panel-title {
+	color: #fff;
+}    
+.about-panel .panel-heading,
+.about-panel .panel-body {                      
+	background-color: transparent;	        
+	color: #fff;
+	padding: 15px;  
+}
+.about-panel .panel-heading {                      
+	text-align: center; 
+}
+.about-panel .panel-heading:after {                      
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	padding-top: 15px;
+	border-bottom: 1px solid white;
+	-webkit-transition: all .5s;
+	transition: all .5s; 
+}
+.about-panel:hover .panel-heading:after {                      
+	width: 75%;
+}
+.about-panel .panel-body {
+	padding-top: 0;
+}
+.about-panel-icon {
+	height: 90%;
+	position: absolute;
+	bottom: 2%;
+	right: 0;
+	opacity: 30%;
+	transition: transform .3s;
+}
+.about-panel:hover .about-panel-icon,
+.about-panel:active .about-panel-icon,
+.about-panel:focus .about-panel-icon {
+	transform: scale(1.2);
+}
+#about-staff {
+	text-align: center;
+}
+.about-staff-title-bar {
+	background-color: #0a4595;
+	padding-top: 16px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.about-staff-title-bar h2 {
+	color: #fff;
+	margin: 0;
+}
+.about-staff-divisions {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+}
+.about-staff-division {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.about-staff-panel {
+	border-radius: 0;
+	margin-bottom: 35px;
+}
+.about-staff-panel .panel-body {
+	padding: 0;
+	background-color: #0a4595;
+}
+.about-staff-panel .panel-body-text {
+	padding: 16px 20px 20px 20px;
+	margin-bottom: 20px;
+}
+.about-staff-panel .panel-body h3 {
+	color: #fff;
+}
+.about-staff-panel .panel-footer {
+	background-color: #0099d8;
+	color: #fff;
+	border: 0;
+	line-height: 1.7;
+	padding: 0;
+	border-radius: 0;
+}
+.about-staff-panel .about-staff-panel-footer-name {
+	background-color: #0a4595;
+	padding: 20px;
+}
+.about-staff-panel .about-staff-panel-footer-name h3 {
+	color: #fff;
+	margin: 0;
+}
+.about-staff-panel .about-staff-panel-footer-info {
+	background-color: transparent;
+	padding: 20px;
+}
+.about-staff-panel .about-staff-panel-footer-info a {
+	color: #fff;
+	text-decoration: underline;
+}
+.about-staff-panel .about-staff-panel-footer-info a:hover,
+.about-staff-panel .about-staff-panel-footer-info a:focus,
+.about-staff-panel .about-staff-panel-footer-info a:active {
+	text-decoration: none;
+} 
+.about-partner h2 {
+	margin-top: 0;
+}
+
+/* ------------------------------------
     Expeditions
 ------------------------------------ */
 
